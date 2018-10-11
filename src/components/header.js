@@ -2,31 +2,36 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
+
+
+  <div className="grid-x grid-padding-x header">
+  {/* Left side topbar */}
+   <div className="topBar cell small-12">
+    <div className="grid-x">
+  
+    <div className="topBar_left cell small-6">
     <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
+    className="topBar__logo"
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
     </div>
+    </div>
+    {/* Right side topbar */}
+    <div
+    className="topBar_right cell small-6"
+    >
+    {/* Menu */}
+    <ul className="menu">
+     <li className="menu__link">Our Solution</li>
+     <li className="menu__link">Roadmap</li>
+     <li className="menu__link">API</li>
+     <li className="menu__link">FAQ</li>
+     <li className="menu__link"><button className="button_empty">Contact Sales</button></li>
+    </ul>
+    </div>
+    </div>
+   </div>
+   
+  
   </div>
 )
 

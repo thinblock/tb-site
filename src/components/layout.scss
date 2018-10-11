@@ -1,42 +1,4 @@
-
-@import '~foundation-sites/scss/util/util';
-@import './settings';
-@import '~foundation-sites/scss/foundation';
-
-// Grids (choose one)
-@include foundation-xy-grid-classes;
-
 .body{margin:0px; padding: 0px;display:block}
-.header{
-    height:700px;
-    width: 100%;
-    background: rgb(24,87,200);
-    background: -moz-linear-gradient(90deg, rgba(24,87,200,1) 0%, rgba(0,200,255,1) 120%);
-    background: -webkit-linear-gradient(90deg, rgba(24,87,200,1) 0%, rgba(0,200,255,1) 120%);
-    background: linear-gradient(90deg, rgba(24,87,200,1) 0%, rgba(0,200,255,1) 120%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1857c8",endColorstr="#00c8ff",GradientType=1);
-    @include breakpoint(small down) { 
-        height:600px;
-    }
-}
-
-.topBar{
-    height:100px;
-    @include breakpoint(small down) { 
-        height:600px;
-    }
-    background: black;
-    position: absolute;
-    top:0px;
-
-}
-.topBar_logo{
-    background-image:url('../images/negative-logo.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 100px;
-    position: relative;
-}
 
 html {
     font-family: sans-serif;
@@ -45,6 +7,7 @@ html {
   }
   body {
     margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
   }
   article,
   aside,

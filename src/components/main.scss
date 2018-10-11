@@ -1,0 +1,77 @@
+@import '~foundation-sites/scss/util/util';
+@import './settings';
+@import '~foundation-sites/scss/foundation';
+
+// Grids (choose one)
+@include foundation-xy-grid-classes;
+
+.header{
+    height:700px;
+    width: 100%;
+    background: rgb(24,87,200);
+    background: -moz-linear-gradient(90deg, rgba(24,87,200,1) 0%, rgba(0,200,255,1) 120%);
+    background: -webkit-linear-gradient(90deg, rgba(24,87,200,1) 0%, rgba(0,200,255,1) 120%);
+    background: linear-gradient(90deg, rgba(24,87,200,1) 0%, rgba(0,200,255,1) 120%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1857c8",endColorstr="#00c8ff",GradientType=1);
+    @include breakpoint(small down) { 
+        height:600px;
+    }
+}
+
+.topBar{
+    height:100px;
+    @include breakpoint(small down) { 
+        height:600px;
+    }
+    background: transparent;
+    position: absolute;
+    top:0px;
+
+}
+.topBar_left{
+    float: left;
+    padding-top: 40px;
+}
+.topBar_right{
+    float: right;
+    text-align: right;
+    padding-top: 40px;
+}
+.topBar__logo{
+    background-image:url('../images/negative-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.menu{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu__link{
+    margin-left:40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+}
+//BUTTONS 
+.button_empty{
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    font-family:  'Nunito Sans', sans-serif;
+    margin-top: -10px;
+} 
