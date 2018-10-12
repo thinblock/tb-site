@@ -30,6 +30,13 @@ const Header = ({ siteTitle }) => (
     </div>
     </div>
    </div>
+
+   {/* Main Title and Buttons */}
+   <div className="header_main cell small-12 text-center">
+    <h1 className="header_main__title text-center">Automation for blockchains</h1>
+    <h6 className="header_main__tagline">Thinblock connects blockchain platforms with third-party services to help you build smart applications.</h6>
+
+   </div>
    
   
   </div>

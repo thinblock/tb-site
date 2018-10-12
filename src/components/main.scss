@@ -4,6 +4,7 @@
 
 // Grids (choose one)
 @include foundation-xy-grid-classes;
+@include foundation-typography;
 
 .header{
     height:700px;
@@ -35,7 +36,6 @@
 .topBar_right{
     float: right;
     text-align: right;
-    padding-top: 40px;
 }
 .topBar__logo{
     background-image:url('../images/negative-logo.png');
@@ -49,6 +49,7 @@
 .menu{
     display: inline-flex;
     list-style: none;
+    margin-top:40px;
 }
 
 .menu__link{
@@ -71,7 +72,25 @@
     color: white;
     font-size: 14px;
     letter-spacing: 1px;
-    font-weight: 500px;
+    font-weight: 500;
     font-family:  'Nunito Sans', sans-serif;
+    line-height: 1px;
     margin-top: -10px;
 } 
+
+.header_main{
+    margin-top:200px;
+    position: relative;
+}
+
+.header_main__title{
+    font-family:  'Nunito Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+}
+.header_main__tagline{
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+}
