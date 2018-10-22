@@ -105,7 +105,7 @@ const Features = ({ children }) => (
         </Col>
       </Row>
       <Row className="justify-content-sm-center">
-        <Col xs={12} sm={4} md={4} lg="auto">
+        <Col xs={12} sm={4} md={4} lg={2} className="feature">
           <FeatureWrapper>
             <FeatureImage>
               <img src={CodeImage} alt="" />
@@ -117,7 +117,7 @@ const Features = ({ children }) => (
             </p>
           </FeatureWrapper>
         </Col>
-        <Col xs={12} sm={4} md={4} lg="auto">
+        <Col xs={12} sm={4} md={4} lg={2} className="feature">
           <FeatureWrapper>
             <FeatureImage>
               <img src={AppsImage} alt="" />
@@ -129,7 +129,7 @@ const Features = ({ children }) => (
             </p>
           </FeatureWrapper>
         </Col>
-        <Col xs={12} sm={4} md={4} lg="auto">
+        <Col xs={12} sm={4} md={4} lg={2} className="feature">
           <FeatureWrapper>
             <FeatureImage>
               <img src={PaymentsImage} alt="" />
@@ -141,7 +141,7 @@ const Features = ({ children }) => (
             </p>
           </FeatureWrapper>
         </Col>
-        <Col xs={12} sm={4} md={4} lg="auto">
+        <Col xs={12} sm={4} md={4} lg={2} className="feature">
           <FeatureWrapper>
             <FeatureImage>
               <img src={WalletImage} alt="" />
@@ -153,7 +153,7 @@ const Features = ({ children }) => (
             </p>
           </FeatureWrapper>
         </Col>
-        <Col xs={12} sm={4} md={4} lg="auto">
+        <Col xs={12} sm={4} md={4} lg={2} className="feature">
           <FeatureWrapper>
             <FeatureImage>
               <img src={CryptoImage} alt="" />

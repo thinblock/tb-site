@@ -72,34 +72,35 @@ const Footer = ({ children }) => (
   <Wrapper>
     <Container>
       <Row className="justify-content-sm-center">
-        <Col xs={12} lg={4}>
+        <Col xs={12}  lgOffset={2} lg={8}>
           <LogoContainer>
             <img src={Logo} alt="logo" />
           </LogoContainer>
         </Col>
-        <Col xs={4} lg={2}>
-          <FooterList>
-            <li>Developers</li>
-            <li>Documentation</li>
-            <li>Github</li>
-            <li>API Status</li>
-          </FooterList>
-        </Col>
-        <Col xs={4} lg={2}>
+        {/* <Col xs={4} lg={2}> 
           <FooterList>
             <li>Resources</li>
             <li>Terms & Conditions</li>
             <li>Privacy Policy</li>
           </FooterList>
+        </Col>*/}
+        <Col xs={4} lg={2}>
+          <FooterList>
+            <li>Developers</li>
+            <a href="https://docs.thinblock.io" target="_blank"><li>Documentation</li></a>
+            <a href="https://github.com/thinblock" target="_blank"><li>Github</li></a>
+            {/* <li>API Status</li> */}
+          </FooterList>
         </Col>
         <Col xs={4} lg={2}>
           <FooterList>
             <li>Support</li>
-            <li>Help Center</li>
-            <li>Twitter</li>
-            <li>Email</li>
+            {/* <li>Help Center</li> */}
+            <a href="https://twitter.com/thinblock" target="_blank"><li>Twitter</li></a>
+            <a href="mailto:accounts@thinblock.io" target="_blank"><li>Email</li></a>
           </FooterList>
         </Col>
+
       </Row>
     </Container>
   </Wrapper>

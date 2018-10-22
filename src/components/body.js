@@ -88,17 +88,28 @@ const ImageContainer = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    margin-bottom: 20px;
+    margin:auto;
+    margin-bottom: 10px;
   }
 
   @media ${device.tablet} {
     height: 300px;
   }
+  @media ${device.laptop} {
+   img{
+    margin-left: 1rem;
+   } 
+  }
   @media ${device.desktop} {
   }
 `
-
+const RightImageContainer = styled(ImageContainer)`
+  @media ${device.laptop} {
+    img{
+      margin-left: 8rem;
+    }
+  }
+`
 const SyntaxHighlighterWrapper = styled(SyntaxHighlighter)`
   border-radius: 5px;
   box-shadow: 0px 1px 1.5px #33333355;
@@ -189,6 +200,7 @@ const LineContainerStyle = {
   overflow: 'hidden',
 }
 
+
 const Body = ({ children }) => (
   <Wrapper>
     <Section>
@@ -216,9 +228,9 @@ const Body = ({ children }) => (
               lg={{ span: 4, order: 2 }}
               className="text-center"
             >
-              <ImageContainer>
+              <RightImageContainer>
                 <img src={DataMiningImage} alt="data mining" />
-              </ImageContainer>
+              </RightImageContainer>
             </Col>
           </Row>
         </SectionContainer>
@@ -281,9 +293,9 @@ const Body = ({ children }) => (
               lg={{ span: 4, order: 2 }}
               className="text-center"
             >
-              <ImageContainer>
+              <RightImageContainer>
                 <img src={CurrenciesImage} alt="currencies" />
-              </ImageContainer>
+              </RightImageContainer>
             </Col>
           </Row>
         </SectionContainer>
@@ -303,8 +315,13 @@ const Body = ({ children }) => (
           </Col>
           <Col xs={12} lg={5}>
             <ButtonsContainer style={{ paddingTop: '20px' }}>
+            <a href="mailto:accounts@thinblock.io">
               <RequestButton>Request access</RequestButton>
+            </a>
+            <a href="https://docs.thinblock.io" target="_blank">
               <DocsButton>Docs</DocsButton>
+            </a>
+             
             </ButtonsContainer>
           </Col>
         </Row>

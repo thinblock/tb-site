@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Container from 'react-bootstrap/lib/Container'
 import Navbar from 'react-bootstrap/lib/Navbar'
 import Nav from 'react-bootstrap/lib/Nav'
+import NavLink from 'react-bootstrap/lib/NavLink'
 import Jumbotron from 'react-bootstrap/lib/Jumbotron'
 import Button from 'react-bootstrap/lib/Button'
 
@@ -116,12 +117,23 @@ const RequestButton = styled(ButtonWrapper)`
   border: solid 1px #ffffff !important;
   color: #1857c8 !important;
 `
-
+const ContactButton = styled(Button)`
+background-color: transparent !important;
+border-radius: 5px;
+border: solid 1px #ffffff !important;
+color: #ffffff !important;
+:hover{
+  background-color: #ffffff !important;
+  color: #1857c8 !important;
+    
+}
+`
 const DocsButton = styled(ButtonWrapper)`
   background-color: #0a49ac !important;
   border-radius: 5px;
   border: solid 1px #0a49ac !important;
   color: #fefefe !important;
+  }
 `
 
 const IllustrationWrapper = styled.div`
@@ -172,8 +184,8 @@ const Header = ({ children }) => (
             <Nav.Link href="#deets">Roadmap</Nav.Link>
             <Nav.Link href="#deets">API</Nav.Link>
             <Nav.Link href="#deets">FAQ</Nav.Link>
-            <Nav.Link style={{ padding: 0 }}>
-              <Button variant="outline-success">Contact Sales</Button>
+            <Nav.Link href="mailto:accounts@thinblock.io" style={{ padding: 0 }}>
+              <ContactButton variant="outline-success">Contact Sales</ContactButton>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -189,8 +201,12 @@ const Header = ({ children }) => (
           help you build smart applications.
         </p>
       </Title>
+      <a href="mailto:accounts@thinblock.io">
       <RequestButton>Request access</RequestButton>
+      </a>
+      <a href="https://docs.thinblock.io" target="_blank">
       <DocsButton>Docs</DocsButton>
+      </a>
     </JumbotronWrapper>
     <IllustrationWrapper>
       <img src={Illustration} alt="Illustration" />
