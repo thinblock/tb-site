@@ -48,7 +48,7 @@ const Roadmap = ({ children }) => (
     </HeaderWrapper>
     <TimelineWrapper>
       <TimelineContainer start year={'2017'} prominent>
-        <b>November:</b> Early Stage Concept
+        <b>November:</b> Early Concept
       </TimelineContainer>
       <TimelineContainer />
       <TimelineContainer middle year={'2018'}>
@@ -62,7 +62,7 @@ const Roadmap = ({ children }) => (
       </TimelineContainer>
       <TimelineContainer />
       <TimelineContainer end year={'2019'}>
-        <b>April:</b> Concept Validation
+        <b>April:</b> Mobile APP Launch
       </TimelineContainer>
       <TimelineContainer noIndicator>
         <b>June:</b> Official Launch

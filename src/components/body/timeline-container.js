@@ -80,6 +80,7 @@ const Content = styled.div`
   left: 80px;
   line-height: 40px;
   width: 260px;
+  box-sizing: none !important;
 `
 
 const TimelineContainer = ({

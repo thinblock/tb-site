@@ -97,7 +97,7 @@ const Footer = ({ children }) => (
             <li>Support</li>
             {/* <li>Help Center</li> */}
             <a href="https://twitter.com/thinblock" target="_blank"><li>Twitter</li></a>
-            <a href="mailto:accounts@thinblock.io" target="_blank"><li>Email</li></a>
+            <a href="mailto:hello@thinblock.io" target="_blank"><li>Email</li></a>
           </FooterList>
         </Col>
 
