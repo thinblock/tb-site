@@ -4,12 +4,11 @@ import styled from 'styled-components'
 import Container from 'react-bootstrap/lib/Container'
 import Navbar from 'react-bootstrap/lib/Navbar'
 import Nav from 'react-bootstrap/lib/Nav'
-import NavLink from 'react-bootstrap/lib/NavLink'
 import Jumbotron from 'react-bootstrap/lib/Jumbotron'
 import Button from 'react-bootstrap/lib/Button'
 
 import Logo from '../images/negative-logo.png'
-import Illustration from '../images/header-illustration.png'
+import Illustration from './image_components/header'
 
 import { device } from '../constants/breakpoints'
 
@@ -141,7 +140,9 @@ const IllustrationWrapper = styled.div`
   text-align: center;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  margin: 0 auto;
+  max-width: 700px;
   img {
     position: relative;
     z-index: 0;
@@ -204,12 +205,12 @@ const Header = ({ children }) => (
       <a href="mailto:accounts@thinblock.io">
       <RequestButton>Request access</RequestButton>
       </a>
-      <a href="https://docs.thinblock.io" target="_blank">
+      <a href="https://docs.thinblock.io" target="_blank" rel="noopener noreferrer">
       <DocsButton>Docs</DocsButton>
       </a>
     </JumbotronWrapper>
     <IllustrationWrapper>
-      <img src={Illustration} alt="Illustration" />
+      <Illustration alt="Illustration" />
     </IllustrationWrapper>
   </Wrapper>
 )

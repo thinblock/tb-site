@@ -5,6 +5,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    'gatsby-transformer-sharp',
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'thinblock',
@@ -28,7 +36,8 @@ module.exports = {
         trackingId: "UA-130795414-1",
         // Puts tracking script in the head instead of the body
         head: true,
-    }.
-    'gatsby-plugin-offline',
+      }
+    },
+    'gatsby-plugin-offline'
   ],
 }

@@ -72,7 +72,7 @@ const Footer = ({ children }) => (
   <Wrapper>
     <Container>
       <Row className="justify-content-sm-center">
-        <Col xs={12}  lgOffset={2} lg={8}>
+        <Col xs={12} lg={8}>
           <LogoContainer>
             <img src={Logo} alt="logo" />
           </LogoContainer>
@@ -87,8 +87,8 @@ const Footer = ({ children }) => (
         <Col xs={4} lg={2}>
           <FooterList>
             <li>Developers</li>
-            <a href="https://docs.thinblock.io" target="_blank"><li>Documentation</li></a>
-            <a href="https://github.com/thinblock" target="_blank"><li>Github</li></a>
+            <a href="https://docs.thinblock.io" target="_blank" rel="noopener noreferrer"><li>Documentation</li></a>
+            <a href="https://github.com/thinblock" target="_blank" rel="noopener noreferrer"><li>Github</li></a>
             {/* <li>API Status</li> */}
           </FooterList>
         </Col>
@@ -96,8 +96,8 @@ const Footer = ({ children }) => (
           <FooterList>
             <li>Support</li>
             {/* <li>Help Center</li> */}
-            <a href="https://twitter.com/thinblock" target="_blank"><li>Twitter</li></a>
-            <a href="mailto:hello@thinblock.io" target="_blank"><li>Email</li></a>
+            <a href="https://twitter.com/thinblock" target="_blank" rel="noopener noreferrer"><li>Twitter</li></a>
+            <a href="mailto:hello@thinblock.io" target="_blank" rel="noopener noreferrer"><li>Email</li></a>
           </FooterList>
         </Col>
 

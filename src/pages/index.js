@@ -3,8 +3,9 @@ import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 
 import { StaticQuery, graphql } from 'gatsby'
-
 import './index.css'
+
+require('bootstrap/dist/css/bootstrap.css')
 
 const IndexPage = () => (
   <StaticQuery
@@ -31,12 +32,6 @@ const IndexPage = () => (
           ]}
         >
           <html lang="en" />
-          <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-            crossOrigin="anonymous"
-          />
           <script src="https://embed.runkit.com/" type="text/javascript" />
         </Helmet>
         <Layout />
