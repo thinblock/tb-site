@@ -318,7 +318,7 @@ const Body = ({ children }) => (
             <a href="mailto:hello@thinblock.io">
               <RequestButton>Request access</RequestButton>
             </a>
-            <a href="https://docs.thinblock.io" target="_blank">
+            <a href="https://docs.thinblock.io" target="_blank" rel="noopener noreferrer">
               <DocsButton>Docs</DocsButton>
             </a>
              
