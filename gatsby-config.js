@@ -29,15 +29,7 @@ module.exports = {
       options: {
         fonts: [`Nunito Sans\:300,400,500,700`],
       },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-130795414-1',
-        // Puts tracking script in the head instead of the body
-        head: true,
-      }
-    },
+    }
     'gatsby-plugin-offline'
   ],
 }
