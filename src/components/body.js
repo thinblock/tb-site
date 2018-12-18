@@ -315,7 +315,7 @@ const Body = ({ children }) => (
           </Col>
           <Col xs={12} lg={5}>
             <ButtonsContainer style={{ paddingTop: '20px' }}>
-            <a href="mailto:accounts@thinblock.io">
+            <a href="mailto:hello@thinblock.io">
               <RequestButton>Request access</RequestButton>
             </a>
             <a href="https://docs.thinblock.io" target="_blank" rel="noopener noreferrer">

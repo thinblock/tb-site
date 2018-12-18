@@ -185,7 +185,7 @@ const Header = ({ children }) => (
             <Nav.Link href="#deets">Roadmap</Nav.Link>
             <Nav.Link href="#deets">API</Nav.Link>
             <Nav.Link href="#deets">FAQ</Nav.Link>
-            <Nav.Link href="mailto:accounts@thinblock.io" style={{ padding: 0 }}>
+            <Nav.Link href="mailto:hello@thinblock.io" style={{ padding: 0 }}>
               <ContactButton variant="outline-success">Contact Sales</ContactButton>
             </Nav.Link>
           </Nav>
@@ -202,7 +202,7 @@ const Header = ({ children }) => (
           help you build smart applications.
         </p>
       </Title>
-      <a href="mailto:accounts@thinblock.io">
+      <a href="mailto:hello@thinblock.io">
       <RequestButton>Request access</RequestButton>
       </a>
       <a href="https://docs.thinblock.io" target="_blank" rel="noopener noreferrer">
