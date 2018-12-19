@@ -18,7 +18,7 @@ import DataMiningImage from '../images/data-mining@2x.png'
 import LaboratoriumImage from '../images/laboratorium@2x.png'
 import CurrenciesImage from '../images/exchanges.png'
 
-import { codeString } from '../snippets/code'
+import { codeString, codeString2, codeString3 } from '../snippets/code'
 
 const Wrapper = styled.div`
   @media ${device.mobileL} {
@@ -262,7 +262,7 @@ const Body = ({ children }) => (
                 language="javascript"
                 style={githubGist}
               >
-                {codeString}
+                {codeString2}
               </SyntaxHighlighterWrapper>
             </Col>
           </Row>
@@ -285,7 +285,7 @@ const Body = ({ children }) => (
                 language="javascript"
                 style={githubGist}
               >
-                {codeString}
+                {codeString3}
               </SyntaxHighlighterWrapper>
             </Col>
             <Col
