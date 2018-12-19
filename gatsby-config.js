@@ -22,6 +22,13 @@ module.exports = {
         fonts: [`Nunito Sans\:300,400,500,700`],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId:'UA-130795414-1'
+      },
+
+    },
     'gatsby-plugin-offline',
   ],
 }
