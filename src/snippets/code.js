@@ -1,10 +1,14 @@
-export const codeString = `// Require the Stripe library with a test secret key
-var stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc')
-
-// Create a payment from a test card token
-const charge = await stripe.charges.create({
-  amount: 2000,
-  currency: 'usd',
-  source: 'tok_mastercard',
-  description: 'My first payment',
-})`
+export const codeString = `curl --location --request POST "http://jobs.service.thinblock.io/jobs" \
+"trigger": {
+  "id": "5b87c976fda2f82592e303e0",
+  "conditions": [
+    {
+      "when": "current_value",
+      "operation": "$gt",
+      "argument": {
+        "type\": \"number\",
+        "valu\": \"2\"
+      }
+    }
+  ]
+}`
