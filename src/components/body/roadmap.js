@@ -62,7 +62,7 @@ const Roadmap = ({ children }) => (
       </TimelineContainer>
       <TimelineContainer />
       <TimelineContainer end year={'2019'}>
-        <b>April:</b> Concept Validation
+        <b>April:</b> Mobile APP
       </TimelineContainer>
       <TimelineContainer noIndicator>
         <b>June:</b> Official Launch
