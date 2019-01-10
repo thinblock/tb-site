@@ -1,4 +1,4 @@
-export const codeString = `curl --location --request POST "http://jobs.service.thinblock.io/jobs" \
+export const codeString = `curl --location --request POST "http://api.service.thinblock.io/jobs" \
 "trigger": {
   "id": "5b87c976fda2f82592e303e0",
   "conditions": [
@@ -15,7 +15,7 @@ export const codeString = `curl --location --request POST "http://jobs.service.t
 [...]`
 
 
-export const codeString2 = `curl --location --request POST "http://jobs.service.thinblock.io/jobs" \
+export const codeString2 = `curl --location --request POST "http://api.service.thinblock.io/jobs" \
 "trigger": {
   "id": "5b87c976fda2f82592e303e0",
   [...]
@@ -29,7 +29,7 @@ export const codeString2 = `curl --location --request POST "http://jobs.service.
 }`
 
 
-export const codeString3 = `curl --location --request POST "http://jobs.service.thinblock.io/jobs" \
+export const codeString3 = `curl --location --request POST "http://api.service.thinblock.io/jobs" \
 "trigger": {
   "id": "5b87c976fda2f82592e303e0",
   [...]
