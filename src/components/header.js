@@ -180,10 +180,9 @@ const Header = ({ children }) => (
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto" />
           <Nav>
-            <Nav.Link href="#deets">Our Solution</Nav.Link>
-            <Nav.Link href="#deets">Roadmap</Nav.Link>
-            <Nav.Link href="#deets">API</Nav.Link>
-            <Nav.Link href="#deets">FAQ</Nav.Link>
+            <Nav.Link href="#features">Our Solution</Nav.Link>
+            <Nav.Link href="#roadmap">Roadmap</Nav.Link>
+            <Nav.Link href="https://docs.thinblock.io/">API</Nav.Link>
             <Nav.Link href="mailto:hello@thinblock.io" style={{ padding: 0 }}>
               <ContactButton variant="outline-success">Contact Sales</ContactButton>
             </Nav.Link>

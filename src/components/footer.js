@@ -49,20 +49,24 @@ const FooterList = styled.ul`
   color: #b9bfcd;
 
   li:first-child {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 500;
     color: #8c93a0;
     padding-bottom: 10px;
   }
 
-  li {
+  li,a {
     cursor: pointer;
     padding: 6px 0px;
     &:hover {
       color: #5b74ea;
     }
   }
-
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #596884;
+  }
   @media ${device.laptop} {
     font-size: 14px;
   }
@@ -86,7 +90,7 @@ const Footer = ({ children }) => (
         </Col>*/}
         <Col xs={4} lg={2}>
           <FooterList>
-            <li>Developers</li>
+            <span>Developers</span>
             <a href="https://docs.thinblock.io" target="_blank"><li>Documentation</li></a>
             <a href="https://github.com/thinblock" target="_blank"><li>Github</li></a>
             {/* <li>API Status</li> */}
@@ -94,7 +98,7 @@ const Footer = ({ children }) => (
         </Col>
         <Col xs={4} lg={2}>
           <FooterList>
-            <li>Support</li>
+            <span>Support</span>
             {/* <li>Help Center</li> */}
             <a href="https://twitter.com/thinblock" target="_blank"><li>Twitter</li></a>
             <a href="mailto:hello@thinblock.io" target="_blank"><li>Email</li></a>

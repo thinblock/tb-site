@@ -203,7 +203,7 @@ const LineContainerStyle = {
 
 const Body = ({ children }) => (
   <Wrapper>
-    <Section>
+    <Section id="features">
       <Features />
     </Section>
     <Section odd>
@@ -301,7 +301,7 @@ const Body = ({ children }) => (
         </SectionContainer>
       </InnerWrapper>
     </Section>
-    <Section>
+    <Section id="roadmap">
       <Roadmap />
     </Section>
     <Section odd final>
